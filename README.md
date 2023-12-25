@@ -1,2 +1,271 @@
 # ida-plugin
-机翻ida plugin
+机翻idaplugins-list
+https://github.com/onethawt/idaplugins-list
+
+
+# 呼吁采取行动
+
+这个存储库非常受欢迎，涵盖 IDA 的所有版本。如果您可以帮助根据版本对插件进行分类，我们将不胜感激。提交公关！！！
+
+# IDA 插件列表
+
+随着时间的推移，我会整理插件。如果您还有其他优秀的插件，请提交 PR。我想为每个插件标记其相应的IDA版本，但这需要我很长时间来测试。如果你能帮忙的话，请帮忙。
+
+**如果插件只是一个没有描述或文档的源代码库，我不会添加它。**
+
+#  **去做**
+
+- 添加更多插件
+-  插件分类
+
+#  插件
+
+- 3DSX 加载器：3DSX 文件的 IDA PRO 加载器
+- abyss 后处理 Hexrays 反编译器输出
+- ActionScript 3：ActionScript 3 处理器模块和 Flash 调试器插件。
+- Adobe Flash 反汇编器：此存档中的 2 个插件将使 IDA 能够解析 SWF 文件，将所有 SWF 标签加载为片段以进行快速搜索和检索，解析所有可能包含 ActionScript2 代码的标签，发现所有此类代码（专用处理器模块）已经为它编写了），甚至根据其中处理的事件来命名事件函数（例如 OnInitialize）。下载
+-  胡同猫：
+  - 查找函数内给定代码块的路径
+  - 查找两个或多个函数之间的路径
+  - 生成交互式调用图
+  -  完全可编写脚本
+- Amnesia：Amnesia 是一个 IDAPython 模块，旨在使用字节级启发式方法在 IDA Pro 数据库中的未定义字节中查找 ARM 拇指指令。目前，该模块中的启发式方法以几种不同的方式查找代码。某些指令通过查找与特定 ARM 操作码相对应的通用字节序列来识别和定义新代码。该模块中的其他函数根据定义的指令序列定义新函数。
+- Android 调试：此版本同时支持通过 USB 和 sdk ADV 管理器进行本机 Arm 调试。
+- Android Scripts Collection：Android 逆向工程脚本集合，让我的生活更轻松
+- APIScout：该项目旨在简化 Windows API 导入恢复。作为输入，可以处理已知环境的任意内存转储（请注意：必须首先使用 apiscout/db_builder 构建参考数据库）。输出是已识别的 Windows API 引用的有序列表，其中包含一些元信息和 ApiVector 指纹。包括一个方便在 IDA 中使用的 GUI 包装器。
+- AutoRE：具有标记支持的自动重命名插件。
+- BinAuthor：将作者与未知的二进制文件匹配。
+- BinCAT：BinCAT 是一个静态二进制代码分析工具包，旨在直接来自 IDA 帮助逆向工程师。
+- BinClone：BinClone：检测恶意软件中的代码克隆 [SERE 2014]
+- BinNavi：BinNavi 是一个二进制分析 IDE - 一个环境，允许用户检查、导航、编辑和注释反汇编代码的控制流图，对可执行文件的调用图执行相同的操作，收集和组合执行跟踪，并且通常跟踪一组分析师的分析结果。
+- Bin Sourcerer：BinSourcerer（又名 RE-Source Online）是一个用于二进制审计和恶意软件分析的源代码匹配框架的程序集。
+- Bootroom 分析库：IBAL 是 IDA Pro Bootrom 分析库，其中包含许多用于分析嵌入式 ROM 的有用函数。
+- Bosch ME7：适用于 IDA Pro 的西门子博世 ME7.x 反汇编助手
+- CGEN：CGEN 支持生成 IDA Pro IDP 模块。
+- Class Informer：扫描 MSVC 32 位目标 IDB，以查找具有 C++ RTTI 和 MFC RTCI 类型数据的 vftable。放置结构定义、名称、标签和注释，以使类 vftable（“虚拟函数表”）更有意义，并使它们更容易阅读，作为逆向工程的辅助工具。创建一个列表窗口，其中包含找到的 vftables 以供浏览。
+- Classy：帮助用户轻松管理 IDA Pro 中的课程。可以通过选择范围来生成 Vtable，可以将函数分配给类，可以轻松编辑和修改它们的签名，可以分配 IDA 结构，可以生成 C 头文件，可能还有更多。
+-  编码：
+  - 定义 IDA 自动分析遗漏的 ASCII 字符串
+  - 定义 IDA 自动分析遗漏的函数/代码
+  - 将数据段中所有未定义的字节转换为 DWORD（从而允许 IDA 解析函数和跳转表指针）
+- c0demap：Codemap 是作为 IDA 插件提供的“运行跟踪可视化”的二进制分析工具。
+- collabREate：collabREate 是 IDA Pro 的一个插件，旨在为处理同一二进制文件的多个 IDA 用户提供协作逆向工程功能。
+- Comida：Comida 是一个插件，它搜索 GUID COM 对象（通用对象模型）的所有引用，并使用 Hexrays 插件推导关联类型，以提高代码的可读性。
+- Cortex M 固件：Cortex M 固件模块整理了一个 IDA Pro 数据库，其中包含来自 ARM Cortex M 微控制器的固件。该模块会对固件向量表进行注释，其中包含许多函数指针。此向量表注释将导致 IDA Pro 对这些指针指向的函数执行自动分析。
+- Crowd Detox：Hex-Rays 的 CrowdDetox 插件会自动从 Hex-Rays 函数反编译中删除垃圾代码和变量。
+- Dalvik Header：这是 IDA Pro 的简单 Dalvik 标头插件
+- 数据外部引用计数器：枚举特定段中的所有外部引用并计算使用频率。该插件在 QtTableWidget 中显示数据，并允许用户对引用进行过滤和排序。您还可以将数据导出到 CSV 文件。
+- 调试器：由 Unicorn 引擎支持的 IDA Pro 调试器插件
+- deREFerencing：IDA Pro 插件，实现更用户友好的寄存器和堆栈视图。
+- Diaphora：Diaphora（διαφορά，希腊语“差异”的意思）是 IDA Pro 的程序比较插件，类似于 Zynamics Bindiff 或 FOSS 对应的 DarunGrim、TurboDiff 等...它在 SyScan 2015 期间发布。
+- Docker IDA：在 Docker 容器中运行 IDA Pro 反汇编程序，以自动化、扩展和分发 IDAPython 脚本的使用。
+- dotNIET：.NIET 是一个 IDA Pro 插件，用于导入缺失的符号（通常是几千个），这些符号在运行时由 .NET 本机编译的二进制文件解析。这些符号位于 SharedLibrary.dll 中，并且不会由此导出。 .NIET 已在以下平台上使用 python 3.8 在 IDA Pro 7.5 上进行了测试：Windows、Linux。该插件当前支持以下.NET本机框架版本：1.3、1.6、1.7、2.2。
+- DOXBox 调试器：Eric Fry 的 IDA/DOSBox 调试器插件
+- DrGadget：这是一个用于交互式反汇编器的 IDAPython 插件，可满足您所有的 ROP 实验需求。
+- DriverBuddy：DriverBuddy 是一个 IDA Python 脚本，用于协助 Windows 内核驱动程序的逆向工程。
+- Drop：一个实验性的 IDA Pro 插件，能够检测模糊二进制文件中多种类型的不透明谓词。它利用符号执行引擎 angr 及其组件的强大功能，根据谓词的符号上下文来推理谓词的不透明性。
+- dsync：同步反编译和反汇编代码视图的 IDAPython 插件。
+- dwarfexport：dwarfexport 是一个 IDA Pro 插件，允许用户导出 dwarf 调试信息。然后可以将其导入到 gdb 和其他工具中，即使您无法连接 IDA 调试器，也可以使用在 IDA 中恢复的信息进行调试。
+- DWARF 插件：IDADWARF 是一个 IDA 插件，可将 DWARF 调试符号导入 IDA 数据库。下载
+- 动态数据解析器：IDA 的插件，旨在使恶意软件的逆向工程变得更容易。功能：代码流跟踪、可搜索 API 调用日志记录、可搜索字符串日志记录、解析动态值和自动注释。
+- 动态 IDA 丰富：DIE 是一个 IDA python 插件，旨在用动态数据丰富 IDA 的静态分析。这是使用 IDA 调试器 API 完成的，方法是在关键位置放置断点，并在命中这些断点后保存当前系统上下文。
+- easyRE：IDA Python3 脚本，使您的运行时分析更容易。它允许跟踪您选择的代码，然后浏览跟踪，查看与跟踪保存的指令关联的寄存器、值和内存。它允许以一种简单的方式比较不同调用之间代码特定部分的数据。适用于 X86-X64 拱门
+- EFI 脚本：一些 IDA 脚本和工具，可帮助对 EFI 可执行文件进行逆向工程。
+- efiXplorer：用于 UEFI 固件分析和逆向工程自动化的 IDA 插件。
+- [EtherAnnotate](https://github.com/inositle/etherannotate_ida): Parses the specialized instruction trace files that are generated using the EtherAnnotate Xen modification (http://github.com/inositle/etherannotate_xen). From the instruction trace, register values and code coverage of the run-time information are visualized in IDA Pro through instruction comments and line colorations.
+- Extract Macho-O：这是一个非常简单的 IDA 插件，用于提取反汇编中任何位置包含的所有 Mach-O 二进制文件。
+- FCatalog：FCatalog（函数目录）是一种以有效方式查找不同二进制 blob 之间相似性的机制。它主要用于识别新的二进制 blob 与之前遇到的二进制 blob 有点相似。 FCatalog 的客户端是一个 IDA 插件，允许一组逆向工程师管理逆向函数池。每当遇到新的二元函数时，FCatalog 都可以将其与所有已知的和先前反转的二元函数进行比较。
+- Findcrypt：IDA 专业插件，用于查找加密常量（以及更多）
+- FIRST：函数识别和恢复签名工具（FIRST）是 IDA Pro 的一个插件，允许用户自动搜索并应用从不同 IDB/用户提交的函数元数据（函数名称、参数名称、参数类型、注释等） 。此功能类似于 IDA 7.2 中引入的 IDA Lumina 功能，尽管 FIRST 功能元数据服务器地址是可配置的，并且 FIRST 服务器代码是开源的，这意味着用户可以设置私有元数据服务器供内部使用，如果想要的。社区数据库也由 Cisco Talos 维护并免费使用。 FIRST 支持 IDA 6.9 SP1 及更高版本。
+- flare-emu：flare-emu 将受支持的二进制分析框架（例如 IDA Pro 或 Radare2）与 Unicorn 的仿真框架相结合，为用户提供易于使用且灵活的界面来编写仿真任务脚本。它旨在处理为其支持的体系结构设置灵活且强大的模拟器的所有内务处理，以便您可以专注于解决代码分析问题。目前，flare-emu 支持 x86、x86_64、ARM 和 ARM64 架构。
+- FLARE IDA 反编译器库 (FIDL)：IDA Pro 反编译器的健全 API。
+- FLARE 插件：Shellcode Hashes、Struct Typer、StackStrings、MSDN Annotations、ApplyCalleType
+- FLS Loader：用于 IFX iPhone 基带固件的 IDA Pro 加载器模块。基于 roxfan 的通用分散加载器脚本。
+- 荧光：取消/突出显示函数调用指令
+- 释放调试器：释放所有文件的 ida pro 调试器。
+- Frida：这是 ida pro 的插件，使用 Frida api。主要是跟踪功能。
+- FRAPL：FRAPL 是一个逆向工程框架，旨在简化 Frida 的动态检测。
+- 朋友：灵活的寄存器/指令扩展器和文档。 FRIEND 是一个 IDA 插件，旨在改进反汇编并将寄存器/指令文档直接引入 IDA 视图。
+- Funcap：此脚本使用 IDA 调试器 API 记录可执行文件中的函数调用（和返回）以及传递的所有参数。它将信息转储到文本文件中，并将其插入到 IDA 的内联注释中。这样，在分析恶意软件时通常遵循行为运行时分析的静态分析可以直接提供运行时信息，例如函数参数中返回的解密字符串。
+- Functions+：IDA Pro 插件，用于制作函数树视图。插件解析函数名称并按名称空间对它们进行分组。
+- 函数标记器：此 IDAPython 脚本根据导入函数的使用来标记子例程
+- Gamecube Extension：这是一个适用于 IDA Pro 5.2 的 Gekko CPU 配对单扩展指令插件
+- Gamecube DSP：该项目向 IDA（交互式反汇编器）添加了对 Gamecube 和 Wii 中 DSP 的支持 [1]。这样可以轻松分析 DSP ucode、处理交叉引用、控制流等。
+- gdbida：GDB 会话和 IDA Pro 反汇编器之间的可视化桥梁
+- genmc：Genmc 是一个 IDAPython 脚本/插件混合体，可以显示 Hexrays 反编译器微代码，这可以帮助开发微代码插件。
+- Gensida：基于 Gens ReRecordings 模拟器修改的 Sega Genesis / Megadrive ROM 的 IDA 调试器插件。
+- 地理定位器：使用谷歌地图和 MaxMind 数据库查找 IP 和 http/https 地址。
+- GhIDA：GhIDA 是一个 IDA Pro 插件，在 IDA 中集成了 Ghidra 反编译器。
+- golang_loader_assist：在 IDA Pro 中使 GO 逆向变得更容易
+- Graph Slick：自动检测内联函数。它突出显示相似的节点组并允许您对它们进行分组，从而简化复杂的功能。作者提供了一个附带的演示文稿，解释了插件背后的算法并展示了示例用例。
+- HashDB IDA：IDA Pro 的 HashDB API 哈希查找插件。
+- HeapViewer：一个用于检查堆的 IDA Pro 插件，专注于漏洞利用开发。
+- HexRays CodeXplorer：Hex-Rays Decompiler 插件，可在 RE 过程中更好地进行代码导航。 CodeXplorer 自动执行 C++ 应用程序或现代恶意软件（如 Stuxnet、Flame、Equation、Animal Farm 等）的代码重构...
+- HexRaysDeob：一个 Hex-Rays 微码 API 插件，破坏了用于创建野外恶意软件系列的混淆编译器。该插件是全自动的，无需用户干预；安装后，呈现给用户的反编译列表将不会混淆。
+- Hexrays 工具箱 在 Hexrays AST 中查找代码模式
+-  HexRays 工具：
+  - 协助创建新的结构定义/虚拟调用检测
+  - 直接跳转到虚函数或结构体成员定义
+  - 给出具有给定大小和给定偏移量的结构列表
+  - 查找与所使用的“形状”相同的结构。
+  - 将函数转换为 __usercall 或 __userpurge
+  -  和更多....
+- HexRaysPyTools：插件协助创建类/结构和检测虚拟表。最好与 Class Informer 插件一起使用，因为它有助于自动获取原始类名称。
+- HRDEV：这是一个 IDA Pro Python 插件，可以使 Hex-Rays Decompiler 的输出更具吸引力。 HRDEV 插件检索标准反编译器输出，使用 Python Clang 绑定对其进行解析，执行一些魔法，然后放回。
+- HrDevHelper：HexRays 反编译器插件，使用 IDA 的图形引擎可视化反编译函数的 ctree。
+- Hyara：用于创建模式匹配规则的插件。它有助于直接在 IDA 中为 YARA 模式匹配工具创建规则。它包括对 x86 操作码中可重定位字节的简单检测，以改进匹配。它还提供了一个检查器功能，用于测试加载的二进制文件的规则。
+- ida-qscripts：一个 IDA 脚本生产力插件。有了这个插件，您将能够使用您最喜欢的编辑器轻松编写和测试脚本。 `ida-qscripts` 将自动检测对您的脚本或其依赖项之一的更改，并自动重新加载它们并重新执行您的脚本。
+- ida-cmake：这不是 IDA 插件，而是用于 IDA 插件开发的 CMake 项目生成器。
+- ida-climacros： `ida-climacros` 是一个生产力插件，允许您定义在与 IDA 的命令行解释器（在输出窗口中）交互时将扩展的宏。
+- IDA2SQL：顾名思义，该插件可用于将信息从 IDA 数据库导出到 SQL 数据库。这允许对收集的数据进行进一步分析：统计分析、构建图表、查找程序之间的相似性等。
+- IDA ARM：此脚本将为您提供 IDA 数据库中使用的 ARM 系统指令列表。这对于定位特定的低级代码段（设置 MMU、缓存、故障处理程序等）非常有用。
+- idaxex：适用于 IDA 7.2+ 的 Xbox360/Xenon 加载器插件，支持大多数已知的 Xbox360/Xenon .XEX 可执行文件格式。
+- idawasm：这些 IDA Pro 插件添加了对加载和反汇编 WebAssembly 模块的支持。
+  - 控制流重构和图形模式
+  - 代码和数据交叉引用
+  - 全局变量、函数参数、局部变量等可以重命名
+  - 自动评论提示支持
+- IDA Batch Decompile：IDA Batch Decompile 是 Hex-Ray 的 IDA Pro 的插件，它添加了批量反编译多个文件及其导入的功能，并带有附加注释（xref、堆栈变量大小）到伪代码 .c 文件
+- IDABuddy：IDABuddy 是逆向工程师最好的朋友。旨在实现 Office 助手 Clippy 的所有功能，甚至更多！
+- IDA C#：使用 C# 编写 IDA 脚本
+- IDA Compare：IDA 反汇编级别比较工具，查找恶意软件变体之间的补丁和修改。请参阅 mydoom A/B 示例数据库和视频培训器以了解使用情况。
+- IDACyber：IDACyber 是交互式反汇编器的插件，可可视化 IDA 数据库的内容。
+- IDA EA：提供上下文查看器、指令仿真器、堆浏览器、跟踪转储器、GDB 集成、样式
+- IDA Emu：idaemu 是一个 IDA Pro 插件 - 用于模拟 IDA Pro 中的代码。它基于独角兽引擎。
+- IDA Eye：插件使您能够在助记符级别执行不同的操作，独立于任何特定的处理器类型。这些操作通过参数化模板来实现，其中包括取消/突出显示指令、收集有关每条指令频率的统计信息以及搜索助记符序列等功能。
+- IDA Extrapass：Sirmabus 的 IDA Pro Win32 目标清理插件。它本质上执行四个清理/修复步骤：将杂散代码部分值转换为“未知”，修复丢失的“对齐”块，修复丢失的代码字节，以及定位和修复丢失/未定义的函数。
+- IDAFuzzy：IDAFuzzy 是 IDA Pro 的模糊搜索工具。这个工具可以帮助你找到命令/函数/结构体等。
+- ida-genesis：用于 SEGA Genesis ROM 黑客攻击的 IDA 脚本套件。
+- iidaidle：idaidle 是商业 IDA Pro 反汇编程序的一个插件，如果用户的实例空闲时间过长，它会向用户发出警告。在预定的空闲时间后，插件首先发出警告，然后保存当前的反汇编数据库并关闭 IDA。
+- IDA Images：IDA 反汇编器的图像预览插件。
+- IDA IPython：这是一个在 IDA Pro 中嵌入 IPython 内核的插件。 Python 生态系统拥有令人惊叹的科学计算库（和社区）。 IPython 本身非常适合探索性数据分析。使用 IPython Notebook 等工具可以轻松地通过富媒体共享代码和解释。 IPython 使得使用 IDAPython 以及以编程方式与 IDA 交互变得非常有趣和简单。
+- IDAngr：在 ida 调试器中使用 angr 从当前调试会话生成状态
+- IDA BPF 处理器：IDA (python) 的 BPF 字节码处理器。仅支持旧的 BPF 字节码（无 eBPF）。
+- IDA Migrator：IDA Migrator 插件负责将符号和类型信息从一个 IDA 数据库实例迁移到另一个 IDA 数据库实例。它将有助于迁移函数名称、结构和枚举。这在以下情况下会派上用场：
+  - 迁移到新版本的 IDA 可以进行更好的分析，并且您不想更改反编译函数的新实例类型信息或变量名称。
+  - 当前 idb 实例无法反编译函数，或者与同一二进制文件的另一个 idb 实例相比，反编译看起来错误。
+  - 在对当前实例进行重大更改之前，先在另一个 idb 实例上进行试验。
+  - 一种创建当前工作的小型备份的轻量级简单方法。
+  - 由于 w/e 原因，您正在处理的当前 idb 实例已损坏。
+- IDAMagicStrings：一个 IDA Python 插件，用于从字符串常量中提取信息。该插件的当前版本能够：
+  - 显示函数与源文件的关系（在树中和在简单列表中，IDA 语言的选择器）。
+  - 显示函数的猜测函数名称。
+  - 根据函数所属的源代码文件+地址重命名函数（例如，memory_mgmt_0x401050）。
+  - 根据猜测的函数名称重命名函数。
+- idamagnum：用于在 IDA 中集成 MagnumDB 请求的插件。 MagNumDB 是一个包含约 380,000 个项目的数据库。这些项目是常量、名称、值，全部从标准 Windows 和 Visual Studio SDK 和 WDK 提供的 6,000 多个头文件（.h、.hxx、.hpp、.idl 等）中提取。
+- IDA-minsc：帮助用户编写与反汇编器捆绑在一起的 IDAPython 插件脚本的插件。该插件将 IDAPython API 的不同方面分组为更简单的格式，允许逆向工程师以很少的投资编写其工作的不同方面的脚本。
+- IDA Patchwork：使用 IDA Pro 缝合恶意软件家族（Spring9 演讲的工具，https://spring2014.gdata.de/spring2014/programm.html）。本质上，我使用 PyEmu 和 IDA 的某种固定/翻新版本来演示恶意软件家族 Nymaim 中发现的不同模式的反混淆。
+- IDA Python 嵌入式工具包：用于自动分析嵌入式设备固件的 IDAPython 脚本。
+- IDAPyHelper：IDAPyHelper 是交互式反汇编器的脚本，可帮助编写 IDAPython 脚本和插件。
+- IDARay：IDARay 是一个 IDA Pro 插件，可将数据库与多个 YARA 文件进行匹配。也许您的规则分散在多个 YARA 文件中，或者您只是想匹配尽可能多的规则，IDARay 可以为您提供帮助。
+- IDA Ref：IDA Pro 完整指令参考插件 - 它类似于自动注释，但很有用。
+- IDA Rest：一个简单的类似 REST 的 API，可实现与 IDA Pro 的基本互操作性。
+- IDArling：IDArling 是 IDA Pro 和 Hex-Rays 的协作逆向工程插件。它允许通过将 IDA Pro 的不同实例连接在一起来实时同步多个用户对数据库所做的更改。
+- IDA Scope：IDAscope 是 IDA Pro 扩展，旨在简化（恶意软件）逆向工程任务，当前重点关注 x86 Windows。它由多个选项卡组成，包含实现不同目标的功能，例如快速识别分析目标中语义上有趣的位置、无缝访问 Windows API 的 MSDN 文档以及查找潜在的加密/压缩算法。
+- IDA 签名匹配工具：用于搜索文件内签名的工具，对于逆向工作非常有用，例如计算或初步了解专有协议或文件使用的加密/压缩算法。它可以识别大量的压缩、多媒体和加密算法以及许多其他东西，例如已知字符串和反调试代码，这些东西也可以手动添加，因为它全部基于在运行时读取的文本签名文件并且易于修改。
+- IDA Skins：插件利用 Qt 样式表为 IDA Pro 的 Qt 版本提供高级皮肤支持，类似于 CSS。
+- IDA Sploiter：IDA Sploiter 是 Hex-Ray 的 IDA Pro 反汇编程序的插件，旨在增强 IDA 作为漏洞开发和漏洞研究工具的功能。该插件的一些功能包括强大的 ROP 小工具搜索引擎、语义小工具分析和过滤、交互式 ROP 链构建器、堆栈枢轴分析、可写函数指针搜索、循环内存模式生成和偏移分析、坏字符和内存漏洞检测以及好多其它的。
+- IDA Stealth：IDAStealth 是一个插件，旨在隐藏 IDA 调试器，使其免受最常见的反调试技术的影响。该插件由两个文件组成，即插件本身和一个 dll，一旦调试器附加到进程，该 dll 就会被注入到调试对象中。注入的 dll 实际上通过挂钩系统调用或修补远程进程中的一些标志来实现大部分隐形技术。
+- IDA StringCluster：该插件扩展了 IDA Pro 的功能，通过在每个函数的基础上对找到的字符串进行聚类来显示二进制文件中的字符串。
+- IDA Toolbag：IDA Toolbag 插件提供了许多方便的功能，例如：
+  - “历史记录”视图，显示反汇编中您认为重要的函数以及它们之间的关系。
+  - 代码路径搜索工具，可让您查找哪些函数（或块）正在形成两个位置之间的路径。
+  - 管理和运行您的 IDC/Python 脚本
+  - 同样重要的是，IDA 工具包可以让您与其他 IDA 用户协作：可以发布他的“历史记录”，或导入另一用户的历史记录，甚至合并它们！
+  - 请参阅官方文档以获取详细的功能列表。
+- IdaVSHelp：IDAPython 插件，用于在 IDA Pro >= 6.8 中集成 Visual Studio Help Viewer
+- IDAtropy：IDAtropy 是 Hex-Ray 的 IDA Pro 的插件，旨在使用 idapython 和 matplotlib 的功能生成熵图表和直方图。
+- IDA Xtensa：这是 IDA 的处理器插件，用于支持 Espressif ESP8266 中的 Xtensa 核心。它不支持 Xtensa 架构的其他配置，但这可能（希望）很容易实现。
+- idb2pat：IDB 到 Pat。
+- IFL：交互式函数列表是一种在函数及其引用之间导航的用户友好方式。
+- ifred：IDA 命令面板及更多
+- ioctl_plugin：一个在处理 IOCTL 代码和 Windows 驱动程序 IOCTL 调度函数时提供帮助的工具。
+- IPyIDA：PyIDA 是一个纯 Python 解决方案，可在 IDA Pro 上下文中使用 IPython 控制台。它会生成一个 IPython 内核，您可以在 shell 中使用 `ipython console --existing` 连接到该内核，或者使用 `<Shift-.>` 在 IDA Pro 中打开 QT 控制台窗口
+- JNIDA：帮助重命名 JNI 本机方法并恢复其 C 签名
+- Kam1n0：Kam1n0 是一个可扩展的系统，支持汇编代码克隆搜索。它允许用户首先索引（大型）二进制文件集合，然后搜索给定目标函数或二进制文件的代码克隆。 Kam1n0试图解决汇编函数的高效子图搜索问题（即图同构问题）。
+- Karta：“Karta”（俄语中“地图”的意思）是 IDA 的源代码辅助快速二进制匹配插件。 Karta 使用一种独特的技术来识别和匹配给定二进制文件中的开源库，使其能够支持巨大的二进制文件（> 200,000 个函数），而对整体性能几乎没有影响。
+- Keypatch：IDA 的多架构汇编器。 Keypatch 允许您输入汇编指令来直接修补正在分析的二进制文件。由 Keystone 引擎提供动力。
+- Labeless：Labeless 是一个插件系统，用于 IDA 数据库和 Olly 之间动态、无缝和实时同步。支持标签、函数名和全局变量同步。 Labelless 提供易于使用的动态转储工具，支持自动即时导入修复以及 IDA-Olly Python 脚本协同的便捷工具。
+- LazyIDA：LazyIDA 可以让您简单快速地执行许多任务（例如，删除 Hex-Rays 中的函数返回类型、将数据转换为不同的格式、扫描格式字符串漏洞和各种快捷方式）
+- Lighthouse：Lighthouse 是 IDA Pro 的代码覆盖率插件。当符号或源代码可能无法用于给定的二进制文件时，该插件利用 IDA 作为平台来映射、探索和可视化外部收集的代码覆盖率数据。
+- LoadProcConfig：LoadProcConfig 是一个 IDA 插件，用于加载处理器配置文件。
+- Localxrefs：查找对当前函数中任何选定文本的引用。
+- MadNES：此插件将 IDA 名称导出为 FCEUXD SP 符号。
+- MazeWalker：用于丰富和加速静态恶意软件分析的工具包。 MazeWalker 的目标是通过自动化运行时数据收集和更好的可视化来减少恶意软件分析时间，最终帮助研究人员专注于静态分析，而不是动态部分。
+- MC68K 处理器模型扩展：这是一个示例插件，用于扩展 M68K 的步越的 gdb 支持，并启用类型信息支持，以便您可以在函数上按“y”并使参数在函数内部和外部传播。
+- mipslocalvars：编译器使用的命名堆栈变量，用于在堆栈上存储寄存器，简化堆栈数据分析（仅限 MIPS）
+-  米普罗普：
+  - 允许您在 MIPS 可执行代码中搜索合适的 ROP 小工具
+  - 用于搜索常见 ROP 小工具的内置方法
+- MrsPicky：一个 IDAPython 反编译器脚本，有助于审核对 memcpy() 和 memmove() 函数的调用。
+- MSDN Helper：此工具将帮助您在使用 IDA Pro 时获取离线 MSDN 帮助。
+- Memory Loader：IDA 加载器，允许将恶意缓冲区加载到 IDA，而不将其写入磁盘。
+  - UrlLoader - 从 URL 加载文件。
+  - MemZipLoader - 将文件加载到加密/纯 zip 文件。
+  - 目前仅支持 Windows。
+- MyNav：MyNav 是 IDA Pro 的一个插件，可帮助逆向工程师完成最典型的任务，例如发现哪些函数负责某些特定任务、查找“有趣”函数和数据入口点之间的路径。
+- nao：nao（无意义的程序集省略器）是 IDA pro 的死代码消除器插件
+- NDSLdr：IDA Pro 的任天堂 DS ROM 加载器模块。
+- NECromancer：IDA Pro V850 处理器模块扩展。
+- NES Loader：适用于 IDA Pro 的任天堂娱乐系统 (NES) ROM 加载器模块。
+- NIOS2：适用于 Altera Nios II Classic/Gen2 微处理器架构的 IDA Pro 处理器模块。
+- NSIS Reversing Suite：NRS 是一组 Python 库，用于解压和分析 NSIS 安装程序的数据。它还具有一个 IDA 插件，用于反汇编安装程序的 NSIS 脚本。
+- obfDetect：一个自动检测二进制文件中混淆代码和状态机的插件。
+- Optimice：该插件使您能够删除一些常见的混淆并将代码重写到新的段。目前支持的优化有：死代码删除、JMP 合并、JCC 不透明谓词删除、基于模式的反混淆
+- Oregami：一个分析当前函数以查找寄存器使用框架的插件。 Oregami 通过将搜索限制为与当前突出显示的寄存器相关的事件而不是整个函数，从而简化了跟踪函数内寄存器的使用情况时的工作。它还允许对寄存器进行本地化重命名，并使用寄存器为多个操作码提供批量类型。
+- Patcher：IDA Patcher 是 Hex-Ray 的 IDA Pro 反汇编程序的插件，旨在增强 IDA 修补二进制文件和内存的能力。
+- Plus22：Plus22 将 x86_64 可执行文件转换为使用 32 位版本的 Hex-Rays Decompiler 进行处理。
+- Plympton：从 YAML 转储中读取程序反汇编的 gem。 YAML 转储是从 IDA Pro python 脚本生成的。该脚本与 Gem (func.py) 一起包含在内
+- Pomidor：IDA Pomidor 是 Hex-Ray 的 IDA Pro 反汇编程序的插件，可帮助您在长时间倒车过程中保持注意力和生产力。
+- Ponce：以简单直观的方式对二进制文件进行污点分析和符号执行。
+- Prefix：Prefix是IDA Pro的一个小功能前缀插件。该插件通过向相关右键菜单添加一些方便的前缀操作来增强 IDA 的函数重命名功能。
+- 处理器更换器：无需重新启动 IDA 即可更换处理器。
+- Python 编辑器：基于 IDA Pro 的 Python 编辑器。该插件可帮助 python 开发人员编写脚本、运行 python 脚本并创建它们。 IT有很多功能，代码识别等等。
+- python-idb：不是 IDA Pro 插件，但允许打开 IDA 数据库（ `*.idb` 和 `*.i64` ）并在其上运行 IDAPython API 的简单子集，而无需 IDA Pro 本身。
+- qb-sync：qb-sync 是一个开源工具，可以在 IDA Pro 和 Windbg 之间添加一些有用的粘合剂。其核心功能是动态同步IDA的图形窗口与Windbg的位置。
+- Qualcomm Loader：用于 Qualcomm Bootloader Stages 的 IDA 加载器插件
+- 重新编译器：IDA重新编译器
+- Reef：IDAPython 插件，用于从函数中查找外部参照。
+- REobjc：REobjc 是一个 IDAPython 模块，旨在在 Objective-C 方法中的调用函数和被调用函数之间进行正确的交叉引用。该模块当前形式支持X64，未来将更新为支持ARM。
+- REProgram：一种在调试器下运行时对可执行文件进行几乎任意更改的方法 - 甚至是不合适的更改。
+- retdec：retdec 的 IDA 插件 - 基于 LLVM 的可重定向机器代码反编译器。
+- ret-sync：ret-sync 代表逆向工程工具同步。它是一组插件，有助于将调试会话 (WinDbg/GDB/LLDB/OllyDbg2/x64dbg) 与 IDA 反汇编器同步。基本思想很简单：充分利用两个领域（静态和动态分析）。
+- REtypedef：REtypedef 是一个 IDA PRO 插件，允许定义函数名称的自定义替换。它带有一个默认规则集，提供许多常见 STL 类型的替代。
+- rizzo：根据以下条件识别和重命名两个或多个 IDB 之间的函数：
+  - 正式签名（即精确的函数签名）
+  - 对唯一字符串的引用
+  - 对唯一常量的引用
+  - 模糊签名（即相似的函数签名）
+  - 调用图（例如，通过关联进行识别）
+- Samsung S4 Rom Loader：适用于 Samsung Galaxy S4 ROM 的 IDA Pro Loader 插件
+- Sark：Sark（以臭名昭著的 Tron 恶棍命名）是一个基于 IDAPython 编写的面向对象脚本层。 Sark 易于使用，并提供了用于编写高级脚本和插件的工具。
+- ScratchABit：ScratchABit 是一个交互式增量反汇编程序，具有数据/控制流分析功能。 ScratchABit 致力于开源逆向工程社区的工作（通过逆向工程为供应商未正确支持的硬件生成开源驱动程序/固件）。
+- 屏幕录像机：IDA Pro Qt 插件，用于录制倒车会话。
+- Sega Genesis/Megadrive 工具：适用于 Sega Genesis/Megadrive romhackers 的特殊 IDA Pro 工具。在 v5.2、v6.6 上测试工作。应该适用于其他版本。
+- Sig Maker：可以自动创建签名并具有多种功能（在 IDA 6.2 上可能不稳定）。
+- SimplifyGraph：一个 IDA Pro 插件，可协助处理复杂的图表。
+- Simulator：IDASimulator 是一个扩展 IDA 条件断点支持的插件，可以轻松地使用 Python 代码在调试进程内扩充/替换复杂的可执行代码。
+- Snippt Detector：Snippet Detector 是一个 IDA Python 脚本项目，用于检测 32 位反汇编文件中的片段。 snippet 是用于标识通用指令序列的词（目前，snippet 确实是一个已定义的函数）。该工具的目的是在数据库中收集许多反汇编的片段以进行检测过程。
+- Snowman Decompiler：Snowman 是 C/C++ 反编译器的本机代码。独立和 IDA 插件。源代码
+- Splode：通过动态分析和仪器增强静态逆向工程
+- spu3dbg：用于无能 SPU 仿真器的 Ida Pro 调试器模块。
+- Stingray：Stingray 是一个用于查找函数字符串的 IDAPython 插件。搜索是从当前函数中的当前位置开始。它也可以通过可配置的搜索深度递归地执行此操作。结果顺序是 BFS 搜索图中字符串的自然顺序。
+- Structure Dump：StructDump 是一个 IDA 插件，允许您将 IDA 类型导出到高级语言定义中。目前支持C++。
+- Styler：用于更改 Ida Pro 风格的小插件
+- [Synergy](https://github.com/CubicaLabs/IDASynergy): A combination of an IDAPython Plugin and a control version system that result in a new reverse engineering collaborative addon for IDA Pro. By http://cubicalabs.com/
+- sysm2elf：IDA Pro 和radare2 的插件，用于将识别的符号导出到ELF 符号表。
+- Tarkus：Tarkus 是 IDA Pro 的插件管理器，模仿 Python 的 pip。
+- TurboDiff：Turbodiff 是作为 IDA 插件开发的二进制比较工具。它发现并分析两个二进制文件功能之间的差异。
+- uEmu：uEmu是一个小巧可爱的基于unicorn引擎的IDA模拟器插件。开箱即用地支持以下架构：x86、x64、ARM、ARM64、MIPS、MIPS64
+- UEFI_RETool：用于分析 UEFI 固件可执行映像的 IDA 插件
+- Virtuailor：Virtuailor 是一个 IDAPython 工具，可以为为英特尔架构以及 32 位和 64 位代码编写的 C++ 代码重建 vtable。
+- VirusBattle：该插件是 Virus Battle API 与众所周知的 IDA 反汇编器的集成。 Virusbattle 是一项 Web 服务，可通过各种高级静态和动态分析来分析恶意软件和其他二进制文件。
+- VMAttack：基于静态和动态虚拟化的打包分析和反混淆。
+- WakaTime：时间跟踪插件，显示您使用 IDA 所花费的时间。
+- Win32 LST 到内联程序集：Python 脚本，从 IDA Win32 LST 文件中提取过程并将其转换为正确动态链接的可编译 Visual C++ 内联程序集。
+- WinIOCtlDecoder：一个 IDA Pro 插件，可将 Windows 设备 I/O 控制代码解码为 DeviceType、FunctionCode、AccessType 和 MethodType。
+- Xex Loader for IDA 6.6：这增加了直接将 xex 文件加载到 IDA 中的能力，而无需先以任何方式处理它们。它在加载时尽可能多地处理 xex 文件，以最大限度地减少用户使其达到适合逆向的状态所需的工作。
+- xray：Hexrays 反编译器插件，根据正则表达式对反编译器的输出进行着色和过滤
+- X86Emu：其目的是让逆向工程师有机会在对二进制文件进行逆向工程时单步执行 x86 代码。该插件可以帮助您从任何平台逐步执行任何 x86 二进制文件。对于 Windows 二进制文件，许多常见的库调用都会被模拟器捕获和模拟，从而实现更高保真度的模拟。我发现它对于单步调试模糊代码特别有用，因为它会根据实际代码路径自动重新组织 IDA 反汇编。
+- YaCo：协作插件：启用后，无限数量的用户可以同时处理同一个二进制文件。任何用户所做的任何修改都会通过 git 版本控制进行同步。它已在 SSTIC 2017 上首次发布
+- Zynamics BinDiff：BinDiff是一个二进制文件的比较工具，可以帮助漏洞研究人员和工程师快速找到反汇编代码中的差异和相似之处。
